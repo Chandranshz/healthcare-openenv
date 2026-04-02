@@ -9,8 +9,7 @@ def home():
 
 @app.post("/step")
 def step(action: dict):
-    result = run_step(action)
-    return result
+    return run_step(action)
 
 @app.post("/reset")
 def reset():
@@ -19,3 +18,8 @@ def reset():
 @app.get("/state")
 def state():
     return {"state": "running"}
+
+
+
+def main():
+    return app
