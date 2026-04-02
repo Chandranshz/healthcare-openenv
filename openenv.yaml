@@ -1,0 +1,19 @@
+name: healthcare-env
+version: 1.0
+
+environment:
+  observation_space:
+    symptoms: list
+    age: int
+
+  action_space:
+    type: string
+    values:
+      - flu
+      - heart_disease
+      - migraine
+
+tasks:
+  - name: easy_diagnosis
+  - name: test_and_diagnose
+  - name: full_pipeline
